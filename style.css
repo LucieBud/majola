@@ -1,0 +1,227 @@
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Amatic SC', cursive;
+*/
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+
+header{
+    background-color: white;
+    background-image: url(images/water1.jpg);
+    background-repeat: no-repeat;
+    
+    display:flex;
+    flex-direction: column;
+}
+.head{
+    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    
+    
+}
+.brand{
+    width:200px;
+    height:60px;
+    
+    margin-left: 2rem;
+    /*box-shadow: 10px 10px 30px rgba(62, 81, 247, 0.2);
+    border: 2px solid rgb(102, 151, 243);
+    border-radius: 50%;*/
+}
+h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+}
+.kontakt{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    list-style:none;
+    padding:0;
+    
+}
+.social{
+    align-items: center;
+}
+.twitter{
+    width:55px;
+    height:55px;
+    border-radius: 15%;
+    
+}
+.facebook{
+    width:52px;
+    height:52px;
+    margin-bottom:2px;
+}
+
+.menu{
+    list-style:none;
+    
+    padding:0;
+    margin:0;
+    height: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 7px 110px 10px 110px;
+    margin:0.10rem;
+    /*border-right: 2px solid white;*/
+    border-radius: 5%;
+    background-color:  rgb(52, 121, 248);
+    box-shadow: 5px 5px 2px rgba(62, 81, 247, 0.2)
+}
+.last{
+    border-right:none;
+}
+
+
+
+
+.linka{
+    display:flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    padding-left:17rem;
+    padding-right:15rem;
+    margin:2rem 0.5rem 2rem 0.5rem;
+    align-items: center;
+    color: rgb(22, 20, 19);
+    background-color: rgba(255, 230, 7, 0.945);
+    font-weight: 700;
+    
+}
+
+.work{
+    height: 200px;
+}
+.spolehlivost img{
+    margin-left: 20rem;
+}
+.profesionalita img{
+    margin-left:42rem;
+}
+.spokojenost img{
+    margin-left:64rem;
+}
+.onas{
+    border-bottom: 1px solid rgb(52, 121, 248);
+    padding-bottom: 2rem;
+}
+
+.number{
+    margin-left:10px;
+}
+.img{
+    display:flex;
+    justify-content: center;
+    margin:1rem;
+    padding-bottom:2rem;
+    border-bottom: 1px solid rgb(52, 121, 248);
+}
+.pero{
+    width:80%;
+    
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    margin:2rem;
+}
+.service{
+    display:flex;
+    flex-direction: column;
+    margin:1rem;
+    border-bottom: 1px solid rgb(52, 121, 248);
+    padding-bottom: 2rem;
+}
+.stroj{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:1rem;
+    margin-top:1rem;
+}
+.s{
+    width:50%;
+}
+.mpero{
+    height: 300px;
+    width:40%;
+}
+.voda{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.v{
+    width:50%;
+}
+.kamera{
+    margin-right:10rem;
+    width:30%;
+    height:300px;
+}
+.revize{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.r{
+    width:50%;
+}
+.detekce{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.d{
+    width:50%;
+}
+.kamera{
+    margin-right:10rem;
+    width:30%;
+    height:300px;
+}
+.do{
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height:300px;
+}
+.otaznik{
+    height:30px;
+    width:30px;
+    
+}
+.wedo{
+    display:flex;
+    flex-direction: row;
+}
