@@ -11,6 +11,8 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5rem;
+    margin-left:2rem;
+    margin-right:2rem;
 }
 
 
@@ -36,7 +38,7 @@ header{
     width:200px;
     height:60px;
     
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     /*box-shadow: 10px 10px 30px rgba(62, 81, 247, 0.2);
     border: 2px solid rgb(102, 151, 243);
     border-radius: 50%;*/
@@ -86,7 +88,7 @@ h1{
     text-decoration: none;
     color: white;
     font-size: 30px;
-    padding: 7px 110px 10px 110px;
+    padding: 7px 105px 10px 105px;
     margin:0.10rem;
     /*border-right: 2px solid white;*/
     border-radius: 5%;
@@ -126,7 +128,7 @@ h1{
     margin-left:42rem;
 }
 .spokojenost img{
-    margin-left:64rem;
+    margin-left:61rem;
 }
 .onas{
     border-bottom: 1px solid rgb(52, 121, 248);
@@ -157,7 +159,7 @@ h2{
     display:flex;
     flex-direction: column;
     margin:1rem;
-    border-bottom: 1px solid rgb(52, 121, 248);
+    
     padding-bottom: 2rem;
 }
 .stroj{
@@ -209,12 +211,19 @@ h2{
     width:30%;
     height:300px;
 }
+.provadime{
+    margin-left:1rem;
+    font-family: 'Amatic SC', cursive;
+    font-size:30px;
+}
 .do{
     list-style:none;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     height:300px;
+    padding-bottom:2rem;
+    border-bottom: 1px solid rgb(52, 121, 248);
 }
 .otaznik{
     height:30px;
@@ -224,4 +233,43 @@ h2{
 .wedo{
     display:flex;
     flex-direction: row;
+}
+.why{
+    font-family: 'Amatic SC', cursive;
+    font-size:30px;
+}
+
+
+
+footer{
+    background-color:rgb(52, 121, 248);
+    color:white;
+}
+.kontakty{
+    padding-top:2rem;
+}
+.brand2{
+    font-weight:700;
+    font-size: 18px;
+    padding-bottom:1rem;
+}
+.spodni{
+    list-style:none;
+    padding-top:3rem;
+}
+.foot{
+    margin-left:35rem;
+}
+.fo{
+    display: flex;
+    flex-direction: row;
+}
+.konec{
+    width: 50%;
+}
+.map{
+    width: 50%;
+}
+.mapa{
+    height:300px;
 }
