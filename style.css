@@ -72,6 +72,7 @@ h1{
     margin-bottom:2px;
 }
 
+
 .menu{
     list-style:none;
     
@@ -82,7 +83,14 @@ h1{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+}
+.menuu{
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    background-color: white;
 }
 .menu a{
     text-decoration: none;
@@ -133,6 +141,7 @@ h1{
 .onas{
     border-bottom: 1px solid rgb(52, 121, 248);
     padding-bottom: 2rem;
+    padding-top:6rem;
 }
 
 .number{
@@ -161,6 +170,7 @@ h2{
     margin:1rem;
     
     padding-bottom: 2rem;
+    padding-top:6rem;
 }
 .stroj{
     display:flex;
@@ -233,6 +243,9 @@ h2{
 .wedo{
     display:flex;
     flex-direction: row;
+}
+.fer{
+    padding-top:6rem;
 }
 .why{
     font-family: 'Amatic SC', cursive;
