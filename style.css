@@ -4,6 +4,8 @@ html { box-sizing: border-box; }
 /*font-family: 'Lato', sans-serif;
 font-family: 'Amatic SC', cursive;
 font-family: 'Girassol', cursive;
+rgba(255, 106, 7, 0.945);
+rgba(87, 243, 56, 0.945)
 */
 
 body{
@@ -34,14 +36,18 @@ header{
     height: 250px;  
 }
 .brand{
-    width:130px;
-    height:40px;
-    margin-left: 3.5rem;
+    width:150px;
+    height:50px;
+    margin-left: 4rem;
     
 }
 h1{
     font-family:'Girassol', cursive;
-    font-size: 50px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top:6rem;
+    padding-left:2rem;
+
 }
 .kontakt{
     display:flex;
@@ -51,6 +57,9 @@ h1{
 .contact{
     list-style:none;
     padding:0;
+}
+.mail{
+    line-height: 2.5rem;
 }
 .social{
     align-items: center;
@@ -64,6 +73,19 @@ h1{
     width:52px;
     height:52px;
     margin-bottom:2px;
+}
+.german{
+    width:45px;
+    margin-left:1rem;
+    margin-bottom:0.9rem;
+    border: 1px solid black;
+}
+.czech{
+    width:45px;
+    height:28.5px;
+    margin-left:1rem;
+    margin-bottom:0.9rem;
+    border: 1px solid black;
 }
 
 
@@ -83,20 +105,30 @@ h1{
     position:sticky;
     top:0;
     padding-top:2rem;
-    padding-bottom:2rem;
+    padding-bottom:0;
     background-color: white;
+    
+}
+.menu{
+    background-color:  rgb(52, 121, 248);
+    box-shadow: 5px 5px 2px rgba(62, 81, 247, 0.2);
+    border-radius: 8px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .menu a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
-    /*width: 60%;*/
-    padding: 7px 105px 10px 105px;
+    font-size: 1.9rem;
+    text-decoration:underline;
+    
+    padding: 1rem 3rem 1rem 3rem;
+    
     /*margin:0.10rem;*/
     /*border-right: 2px solid white;*/
-    border-radius: 5%;
-    background-color:  rgb(52, 121, 248);
-    box-shadow: 5px 5px 2px rgba(62, 81, 247, 0.2);
+    
+    
     display:inline-block;
     transition-property: transform;
     transition-duration: 0.5s;
@@ -120,15 +152,17 @@ h1{
     color: rgb(22, 20, 19);
     
     font-weight: 700;
+    
+    
 }
 .nonstop{
     background-color: rgba(255, 230, 7, 0.945);
-    padding-top:2rem;
-    padding-bottom: 2rem;
-    padding-left:7rem;
-    padding-right:7rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left:3rem;
+    padding-right:3rem;
     margin-top: 2rem;
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
     margin-left:auto;
     transform: skewX(-20deg);
 }
@@ -138,25 +172,31 @@ h1{
 .number{
     margin-left:10px;
     background-color: rgba(255, 230, 7, 0.945);
-    padding-top:2rem;
-    padding-bottom: 2rem;
-    padding-left:10rem;
-    padding-right:10rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-left:3rem;
+    padding-right:3rem;
     margin-top: 2rem;
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
     margin-right:auto;
-    font-size: 40px;
+    font-size: 2rem;
     transform: skewX(-20deg);
     text-transform: none;
-    animation: animace 2s linear;
-    animation-iteration-count: infinite;
+    animation: animace 5s linear;
+    animation-iteration-count: 1;
 }
 @keyframes animace{
     0%{
         background:rgba(255, 230, 7, 0.945);
     }
+    25%{
+        background: rgba(86, 213, 245, 0.945);
+    }
     50%{
-        background:rgba(255, 106, 7, 0.945);
+        background:rgb(52, 121, 248);
+    }
+    75%{
+        background:rgba(86, 213, 245, 0.945);
     }
     100%{
         background:rgba(255, 230, 7, 0.945);
@@ -176,28 +216,58 @@ h1{
 .pero{
     width:80%;
 }
+.onas{
+    border-bottom: 1px solid rgb(52, 121, 248);
+    padding-bottom: 2rem;
+    padding-top:6rem;
+    align-items: center;
+}
 h2{
     font-family:'Girassol', cursive;
     font-size: 40px;
     margin:2rem;
 }
+.loga{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom:2rem;
+    border-bottom: 1px solid rgb(52, 121, 248);
+}
 .work{
-    height: 200px;
+    height: 150px;
+}
+.spolehlivost{
+    padding:2rem;
+    width:50%;
+    align-items: center;
+}
+.profesionalita{
+    padding:2rem;
+    width:50%;
+    align-items: center;
+}
+.cas{
+    padding:2rem;
+    width:50%;
+    align-items: center;
+}
+.spokojenost{
+    padding:2rem;
+    width:50%;
+    align-items: center;
 }
 .spolehlivost img{
-    margin-left: 20rem;
+    margin-left: 2rem;
 }
 .profesionalita img{
-    margin-left:42rem;
+    margin-left:2rem;
 }
 .spokojenost img{
-    margin-left:61rem;
+    margin-right:2rem;
 }
-.onas{
-    border-bottom: 1px solid rgb(52, 121, 248);
-    padding-bottom: 2rem;
-    padding-top:6rem;
-}
+
 
 
 
@@ -269,13 +339,6 @@ h2{
     flex-direction: column;
     justify-content: space-around;
     height:300px;
-    padding-bottom:2rem;
-    border-bottom: 1px solid rgb(52, 121, 248);
-}
-.otaznik{
-    height:30px;
-    width:30px;
-    
 }
 .wedo{
     display:flex;
@@ -287,6 +350,20 @@ h2{
 .why{
     font-family:'Girassol', cursive;
     font-size:30px;
+}
+.because{
+    line-height: 2rem;
+}
+.sentence{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size:2.5rem;
+    color:rgb(21, 43, 243);
+    font-family: 'Girassol', cursive;
+    margin-left: 16rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
 }
 
 
@@ -302,11 +379,13 @@ footer{
 .brand2{
     font-weight:700;
     font-size: 18px;
+}
+.adress{
     padding-bottom:1rem;
 }
 .spodni{
     list-style:none;
-    padding-top:3rem;
+    padding-top:1rem;
 }
 .foot{
     margin-left:35rem;
@@ -318,9 +397,22 @@ footer{
 .konec{
     width: 50%;
 }
+.mailu{
+    line-height: 2.5rem;
+}
+.ico{
+    line-height:2.5rem;
+}
 .map{
     width: 50%;
 }
 .mapa{
     height:300px;
+    margin-bottom:2rem;
+}
+.mapa:hover{
+    transform: scale(1.1,1.1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
