@@ -181,29 +181,26 @@ h1{
     margin-right:auto;
     font-size: 2rem;
     transform: skewX(-20deg);
-    text-transform: none;
-    animation: animace 5s linear;
-    animation-iteration-count: 1;
-}
-@keyframes animace{
-    0%{
-        background:rgba(255, 230, 7, 0.945);
-    }
-    25%{
-        background: rgba(86, 213, 245, 0.945);
-    }
-    50%{
-        background:rgb(52, 121, 248);
-    }
-    75%{
-        background:rgba(86, 213, 245, 0.945);
-    }
-    100%{
-        background:rgba(255, 230, 7, 0.945);
-    }
+    /*animation: animace 5s linear;
+    animation-iteration-count: 1;*/
+    animation-name:animace;
+    animation-duration:1.3s;
+    animation-iteration-count: 3;
+    animation-direction:linear;
 }
 .num{
     transform:skewX(20deg);
+}
+@keyframes animace{
+    0%{
+        transform:scale(1.0) skewX(-20deg);
+    }
+    50%{
+        transform:scale(1.2) skewX(-20deg);
+    }
+    100%{
+        transform:scale(1.0) skewX(-20deg);
+    }
 }
 .img{
     display:flex;
@@ -219,7 +216,7 @@ h1{
 .onas{
     border-bottom: 1px solid rgb(52, 121, 248);
     padding-bottom: 2rem;
-    padding-top:6rem;
+    padding-top:10.5rem;
     align-items: center;
 }
 h2{
@@ -232,6 +229,7 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top:5rem;
     padding-bottom:2rem;
     border-bottom: 1px solid rgb(52, 121, 248);
 }
@@ -241,21 +239,29 @@ h2{
 .spolehlivost{
     padding:2rem;
     width:50%;
+    display:flex;
+    flex-direction: column;
     align-items: center;
 }
 .profesionalita{
     padding:2rem;
     width:50%;
+    display:flex;
+    flex-direction: column;
     align-items: center;
 }
 .cas{
     padding:2rem;
     width:50%;
+    display:flex;
+    flex-direction: column;
     align-items: center;
 }
 .spokojenost{
     padding:2rem;
     width:50%;
+    display:flex;
+    flex-direction: column;
     align-items: center;
 }
 .spolehlivost img{
@@ -267,6 +273,9 @@ h2{
 .spokojenost img{
     margin-right:2rem;
 }
+h4{
+    font-size:1.5rem;
+}
 
 
 
@@ -277,7 +286,7 @@ h2{
     margin:1rem;
     
     padding-bottom: 2rem;
-    padding-top:6rem;
+    padding-top:10.5rem;
 }
 .stroj{
     display:flex;
@@ -329,6 +338,7 @@ h2{
     height:300px;
 }
 .provadime{
+    margin-top:5rem;
     margin-left:1rem;
     font-family:'Girassol', cursive;
     font-size:30px;
@@ -345,7 +355,7 @@ h2{
     flex-direction: row;
 }
 .fer{
-    padding-top:6rem;
+    padding-top:10.5rem;
 }
 .why{
     font-family:'Girassol', cursive;
@@ -373,8 +383,12 @@ footer{
     background-color:rgb(52, 121, 248);
     color:white;
 }
+.white{
+    background-color:white;
+    padding-top:12rem;
+}
 .kontakty{
-    padding-top:2rem;
+    padding-top:1rem;
 }
 .brand2{
     font-weight:700;
