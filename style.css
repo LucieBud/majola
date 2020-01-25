@@ -31,18 +31,19 @@ header{
     
     display:flex;
     flex-direction: column;
-    /*flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 250px;  */
+    height: 250px; 
+    flex-wrap: nowrap; 
 }
 .brand{
-    /*width:150px;
-    height:50px;*/
-    width:9.5rem;
-    height:100%;
+    width:15%;
+    height:20%;
     margin-right: auto;
     margin-top:1rem;
+    position: relative;
+    top:2rem;
+    left:2rem;
 }
 h1{
     font-family:'Girassol', cursive;
@@ -51,12 +52,14 @@ h1{
     margin-top:2rem;
     margin-bottom:2rem;
     padding-left:2rem;
-    align-self: center;
+    text-align: center;
 }
 .first{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    align-self:flex-end;
+
 }
 .contact{
     list-style:none;
@@ -231,16 +234,19 @@ h1{
 .onas{
     border-bottom: 1px solid rgb(52, 121, 248);
     padding-bottom: 2rem;
-    padding-top:10.5rem;
-    align-items: center;
-}
-.onas p{
+    padding-top:11rem;
+    text-align:center;
     margin-bottom:2rem;
+    display:flex;
+    flex-direction: column;
 }
 h2{
     font-family:'Girassol', cursive;
-    font-size: 40px;
+    font-size: 35px;
     margin:2rem;
+}
+.hserv{
+    text-align: center;
 }
 .loga{
     display:flex;
@@ -260,6 +266,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
 }
 .profesionalita{
     padding:2rem;
@@ -267,6 +274,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
 }
 .cas{
     padding:2rem;
@@ -274,6 +282,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
 }
 .spokojenost{
     padding:2rem;
@@ -281,6 +290,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
+    text-align:center;
 }
 .spolehlivost img{
     margin-left: 2rem;
@@ -302,6 +312,7 @@ h4{
     display:flex;
     flex-direction: column;
     margin:1rem;
+    text-align:center;
     
     padding-bottom: 2rem;
     padding-top:10.5rem;
@@ -312,9 +323,12 @@ h4{
     align-items: center;
     margin-bottom:1rem;
     margin-top:1rem;
+    
 }
 .s{
     width:50%;
+    padding-right: 1rem;
+    
 }
 .mpero{
     height: 300px;
@@ -325,27 +339,33 @@ h4{
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
+    
 }
 .v{
     width:50%;
+    
 }
-
 .revize{
     display:flex;
     flex-direction: row;
     align-items: center;
     margin-bottom:1rem;
+    
 }
 .r{
     width:50%;
+    padding-right: 1rem;
+    
 }
 .detekce{
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
+
 }
 .d{
     width:50%;
+    
 }
 .kamera{
     margin-right:10rem;
@@ -359,6 +379,12 @@ h4{
     height:300px;
     margin-top:2rem;
 }
+.nadpis{
+    font-family:'Girassol', cursive;
+    font-size:30px;
+    text-align:center;
+    margin-top:5rem;
+}
 .provadime{
     margin-top:5rem;
     margin-left:1rem;
@@ -366,27 +392,38 @@ h4{
     font-size:30px;
 }
 .do{
-    list-style:none;
-    display:flex;
+    /*display:flex;
     flex-direction: column;
     justify-content: space-around;
-    height:300px;
+    height:300px;*/
+    margin-left:auto;
+    margin-right:auto;
+    line-height: 2.5rem;
+    list-style-image: url(images/odrazka.png);
+    
 }
-.wedo{
-    display:flex;
-    flex-direction: row;
+.do li{
+    text-align:left;
 }
 .fer{
     padding-top:10.5rem;
     display:flex;
     flex-direction: column;
+    text-align:center;
 }
 .why{
     font-family:'Girassol', cursive;
     font-size:30px;
+    margin-top:5rem;
 }
 .because{
-    line-height: 2rem;
+    line-height: 2.5rem;
+    margin-left:auto;
+    margin-right:auto;
+    list-style-image: url(images/odrazka.png);
+}
+.because li{
+    text-align:left;
 }
 
 .sentence{
@@ -396,6 +433,7 @@ h4{
     font-size:2.5rem;
     color:rgb(21, 43, 243);
     font-family: 'Girassol', cursive;
+    padding-bottom:1rem;
 }
 
 
@@ -426,10 +464,7 @@ footer{
 .adress{
     padding-bottom:1rem;
 }
-.spodni{
-    list-style:none;
-    padding-top:1rem;
-}
+
 .foot{
     
     align-self:center;
@@ -440,19 +475,32 @@ footer{
 }
 .konec{
     width: 50%;
+    margin-left:2.5rem;
+    display:flex;
+    flex-direction:column;
 }
 .mailu{
     line-height: 2.5rem;
+    margin-top:1rem;
 }
 .ico{
     line-height:2.5rem;
 }
-.map{
-    width: 50%;
+.tel{
+    display:flex;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+    line-height: 0;
+
+}
+.tel li{
+    padding:0;
 }
 .mapa{
     height:300px;
     margin-bottom:2rem;
+    width: 120%;
 }
 .mapa:hover{
     transform: scale(1.1,1.1);
@@ -462,8 +510,27 @@ footer{
 }
 
 
-
+@media (max-width:1140px){
+    .mapa{
+        height:250px;
+        width:100%;
+    }
+}
 @media (max-width:991px){
+    .head{
+    
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 250px; 
+    }
+    .first{
+        display:flex;
+        flex-direction: column;
+        align-content:flex-end;
+        align-self:flex-end;
+    }
+    
     .onas{
         display:flex;
         flex-direction: column;
@@ -477,6 +544,7 @@ footer{
         align-items: center;
         margin-left:1rem;
         margin-right:1rem;
+        
     }
     .fer{
         display:flex;
@@ -504,8 +572,9 @@ footer{
     }
     .social{
         display:flex;
-        flex-direction: row;  
-        margin-right:1rem;      
+        flex-direction: column;  
+        margin-right:1rem;
+        justify-content: flex-end;    
     }
     .face{
         width:
@@ -517,46 +586,51 @@ footer{
     .nonstop{
         align-items:center;
         margin:1rem;
+        
     }
     .number{
         align-items:center;
         margin:1rem;
     }
-    .brand{
-        margin-right:5rem;
-    }
-    .menu{
+    .menuu{
         display:none;
     }
-    .head{
-    
+    .menu{
         display:flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        height: 250px;  
+        flex-direction:column;
+        position: absolute;
+        top:70px;
+        right:15px;
+        background-color: rgba(62, 81, 247, 0.2);
+        z-index:20;
+        
+        color:red;
+        text-decoration:none;
+        margin:0;
+        padding:0;
+        align-items:center;
     }
     .twitter{
-        width:35px;
-        height:35px;
+        width:25px;
+        height:25px;
         border-radius: 15%;
     }
     .facebook{
-        width:32px;
-        height:32px;
+        width:25px;
+        height:25px;
         margin-bottom:2px;
     }
     .german{
-        width:35px;
+        width:25px;
     }
     .czech{
-        width:35px;
+        width:25px;
+        height:15px;
     }
-    .nadpis{
+    .nadpishl{
         font-size:2.5rem;
         margin-top:0;
-        align-self:flex-end;
+        align-self:center;
     }
     .menubutton{
         display:block;
@@ -564,8 +638,7 @@ footer{
         height:60px;
         margin-left:auto;
         margin-right:5rem;
-        
-        
+        cursor: pointer;
     }
     .button{
         position:-webkit-sticky;
@@ -580,29 +653,31 @@ footer{
         position:static;
         padding:0;
     }
+    .sl{
+        text-align:center;
+    }
     .s{
         width:100%;
+        
     }
     .v{
         width:100%;
+        
     }
     .r{
         width:100%;
+        
     }
     .d{
         width:100%;
+        
     }
     .detektor{
-        width:40%;
-        height:20%;
+        width:30%;
+        height:50%;
         margin-right:auto;
         margin-left:auto;
-    }
-    .kamera{
-        width:60%;
-        height:40%;
-        margin-right:auto;
-        margin-left:auto;
+        
     }
     .mpero{
         width:60%;
@@ -610,26 +685,46 @@ footer{
         margin-right:auto;
         margin-left:auto;
     }
+    .kamera{
+        width:70%;
+        height:50%;
+        margin-right:auto;
+        margin-left:auto; 
+    }
     .stroj{
         display:flex;
         flex-direction: column;
+        
     }
     .voda{
         display:flex;
         flex-direction: column;
+        
     }
     .revize{
         display:flex;
         flex-direction: column;
+        
     }
     .detekce{
         display:flex;
         flex-direction: column;
+        
     }
-}
-@media (max-width:1020px){
-    .contact{
-        display:none;
+    .konec{
+        width: 100%;
+        text-align:center;
+        
+        padding-right:1rem;
+        line-height: 1rem;
+        margin-left:0;
+    }
+    .ico{
+        margin-top:1rem;
+    }
+    .tel{
+        align-self:center;
+        /*margin-left:4rem;*/
     }
 }
 @media (max-width:827px){
@@ -638,9 +733,47 @@ footer{
     }
 }
 @media (max-width:640px){
+    .brand{
+        width:80px;
+        height:40px;
+    
+    }
     .mapa{
         width:300px;
         height:180px;
+    }
+}
+@media (min-width:640px) and (max-width:809px){
+    h1{
+        margin-left:0;
+        margin-right:0;
+    }
+}
+@media (min-width:640px){
+    /*h1{
+        margin-left:15rem;
+        margin-right:15rem;
+    }*/
+    .brand{
+        width:20%;
+        height:15%;
+        top:2rem;
+
+    }
+}
+
+@media (max-width:445px){
+    .mapa{
+        width:150px;
+        height:90px;
+    }
+    .map{
+        padding:0;
+        margin:1rem;
+        margin-left:3rem;
+    }
+    .tel{
+        flex-direction:column;
     }
 }
 @media (max-width:700px){
@@ -661,35 +794,39 @@ footer{
     .spokojenost{
         width:100%;
     }
+    .uvod2{
+        display:block;
+        line-height: 2rem;
+    }
+    .uvod{
+        display:none;
+    }
 }
-@media (max-width:465px){
-    .brand{
-        margin-right:1rem;
-        margin-top:2rem;
-        margin-bottom:1rem;
+@media (min-width:701px){
+    .uvod2{
+        display:none;
     }
-    .first{
-        flex-direction:column-reverse;
-    }
+}
+@media (max-width:330px){
     .head{
-        height:280px;
+        height:250px;
     }
-    .nadpis{
-        font-size:170%;
-        margin-bottom:0;
+    .nadpishl{
+        font-size: 2rem;
+    }
+    .brand{
+        margin-top:2rem;
     }
     .menubutton{
-        margin-right:1rem;
+        margin-right:0.5rem;
     }
-    .number{
-        padding:0.5rem;
+}
+@media (max-width:500px){
+    .menubutton{
+        margin-right:2rem;
     }
-    .nonstop{
-        padding:0.5rem;
-        font-size:80%;
-    }
-    /*.non{
-        text-align;: center;
-    }*/
+}
+.show{
+    display: flex;
 }
 
