@@ -24,16 +24,16 @@
             <div class="first">
                 <div class="social">
                     <a class="face" href="#">
-                        <img class="facebook" src="images/facebook.png" alt="Odkaz na profil firmy na Facebooku.">
+                        <img class="facebook" src="images/facebook.png" alt="Odkaz na profil firmy na Facebooku">
                     </a>
                     <a class="twit" href="#">
-                        <img class="twitter" src="images/twitter.png" alt="Odkaz na profil firmy na Twitteru.">
+                        <img class="twitter" src="images/twitter.png" alt="Odkaz na profil firmy na Twitteru">
                     </a>
                     <a class="cz" href="#">
-                        <img class="czech" src="images/czech.png" alt="Zobrazení stránky v českém jazyku.">
+                        <img class="czech" src="images/czech.png" alt="Zobrazení stránky v českém jazyce (cs)">
                     </a>
                     <a class="ger" href="#">
-                        <img class="german" src="images/germany.png" alt="Zobrazení stránky v německém jazyku.">
+                        <img class="german" src="images/germany.png" alt="Zobrazení stránky v německém jazyce (de)">
                     </a>
                 </div>
             </div>   
@@ -41,26 +41,29 @@
                 Čištění kanalizace a odpadů
             </h1>
         </section>
+    
     </header>
+       
     <div class="button">
-    <img  id="butt" class="menubutton" src="images/menu.png" alt="rozklikávací menu">
-    </div>
-    <nav class="menuu">
-        <ul id="ted" class="menu">
-            <li>
-                <a href="#os">Úvod</a>
-            </li>
-            <li>
-                <a href="#serv">Služby</a>
-            </li>
-            <li>
-                <a href="#ref">Reference</a>
-            </li>
-            <li>
-                <a class="last" href="#kon">Kontakty</a>
-            </li>
-        
-        </ul>    
+        <img id="butt" class="menubutton" src="images/menu.png" alt="rozklikávací menu">
+        <nav id="nav" class="menuu">
+            
+                <ul class="menu">
+                    <li>
+                        <a class=lif href="#os">Úvod</a>
+                    </li>
+                    <li>
+                        <a class=lis href="#serv">Služby</a>
+                    </li>
+                    <li>
+                        <a class=lit href="#ref">Reference</a>
+                    </li>
+                    <li>
+                        <a class=lifo href="#kon">Kontakty</a>
+                    </li>
+                </ul>
+            </nav>
+    </div>       
         <div class="linka">
             <div class="nonstop">
                 <div class="non">Non stop HAVARIJNÍ LINKA:</div>
@@ -69,7 +72,7 @@
                 <div class="num">+420 721 510 838</div>
             </div>
         </div>
-    </nav>
+    
     <main>
         <div class="img">
             <img class="pero" src="images/pero.png" alt="Čištění mechanickým perem">
@@ -112,7 +115,7 @@
                         <p>Jedná se o vysoce efektivní metodu, která mechanicky uvolňuje ucpané kanalizace, domovní odpady nebo potrubí otáčivým pohybem. Daná metoda disponuje velkou variabilitou nástavců, proto ve zkušených rukou není žádná ucpávka překážkou. Naše společnost vlastní nepřeberné množství nástavců nejrůznějších konstrukcí pro optimální řešení problémů. Díky vysokému výkonu našeho zařízení dokážeme snadno pomoci i s ucpávkami daleko od vstupu nástroje cca do 40m.
                         </p>
                     </div>
-                    <img class="mpero" src="images/pero.png" alt="">
+                    <img class="mpero" src="images/pero.png" alt="Čištění mechanickým perem">
                 </div>
                 <div class="voda">
                     <div class="v">
@@ -125,7 +128,7 @@
                         </p>
                         <p>Výše popsaná metoda je vhodná pro preventivní čištění.</p>
                     </div>
-                    <img class="kamera" src="images/Krtek.jpg" alt="">
+                    <img class="kamera" src="images/Krtek.jpg" alt="Čištění odpadu tlakovou vodou-krtkem">
                 </div>
                 <div class="revize">
                     <div class="r">
@@ -135,7 +138,7 @@
                         <p>Nabízíme Vám profesionální revizi potrubních tras kamerovým systémem s vysokým rozlišením a osvětlením. Daná kamera díky svým špičkovým parametrům dokáže detekovat překážky nebo vady zcela malých rozměrů. Kamerové zařízení je vybaveno flexibilním připojením, které dokáže snadno kopírovat složité odpadní nebo potrubní trasy i na delší vzdálenosti přesahují 20m.
                         </p>
                     </div>
-                    <img class="kamera" src="images/kamera.png" alt="">
+                    <img class="kamera" src="images/kamera.png" alt="Revize potrubí kamerou">
                 </div>
                 <div class="detekce">
                     <div class="d">
@@ -147,7 +150,7 @@
                                 Metoda je často využívána pro přesné vymezení problému pro následné stavební opravy nebo znázornění potrubní trasy.
                         </p>
                     </div>
-                    <img class="detektor" src="images/detektor.png" alt="">
+                    <img class="detektor" src="images/detektor.png" alt="Detektor pro vyhledání problému v potrubí">
                 </div>
             </div>
             <h3 class="nadpis">Proč právě nás?</h3>
@@ -253,13 +256,14 @@
     <script>
             (function() {
                 let butt = document.getElementById("butt")
-                let ted = document.getElementById("ted")
-
-                butt.addEventListener("click",function(){
-                    ted.classList.toggle("show"); 
-            })
-            
+                
+                let nav = document.getElementById("nav")
+               
+                butt.addEventListener("click", function(){
+                    nav.classList.toggle("show");
+                    })
             })()
+           
     </script>
 </body>
 
