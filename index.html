@@ -259,9 +259,16 @@
                 
                 let nav = document.getElementById("nav")
                
-                butt.addEventListener("click", function(){
-                    nav.classList.toggle("show");
-                    })
+                butt.addEventListener("click", function(e){
+                    nav.classList.toggle("show")
+                  
+                    e.stopPropagation()
+                    
+                })
+
+                document.addEventListener("click",function(){
+                    nav.classList.remove("show")
+                })
             })()
            
     </script>
