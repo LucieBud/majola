@@ -22,8 +22,9 @@ body{
 
 header{
     background-color: white;
-    background-image: url(images/water1.jpg);
-    background-repeat: no-repeat; 
+    background-image: url(images/voda.jpg);
+    background-repeat: no-repeat;
+    background-size:  600px 250px;
     display:flex;
     flex-direction: column;
 }
@@ -524,7 +525,30 @@ footer{
     transition-timing-function: ease;
 }
 
-
+@media (min-width:870px) and (max-width:1200px){
+    header{
+        background-color: white;
+        background-image: url(images/voda.jpg);
+        background-repeat: no-repeat;
+        background-size:  450px 220px;
+    }
+}
+@media (min-width:475px) and (max-width:869px){
+    header{
+        background-color: white;
+        background-image: url(images/voda.jpg);
+        background-repeat: no-repeat;
+        background-size:  400px 180px;
+    }
+}
+@media (max-width:474px){
+    header{
+        background-color: white;
+        background-image: url(images/voda.jpg);
+        background-repeat: no-repeat;
+        background-size:  300px 120px;
+    }
+}
 @media (max-width:1140px){
     .mapa{
         height:250px;
@@ -536,7 +560,8 @@ footer{
         padding-top:7rem;
     }
     .service{
-        padding:7rem;
+        padding-top:7rem;
+
     }
     .fer{
         padding-top:7rem;
@@ -712,6 +737,7 @@ footer{
         font-size:2.5rem;
         margin-top:0;
         align-self:center;
+        padding-left:0;
     }
     .menubutton{
         display:block;
@@ -738,22 +764,7 @@ footer{
     .sl{
         text-align:center;
     }
-    .s{
-        width:100%;
-        
-    }
-    .v{
-        width:100%;
-        
-    }
-    .r{
-        width:100%;
-        
-    }
-    .d{
-        width:100%;
-        
-    }
+   
     .detektor{
         width:30%;
         height:50%;
@@ -776,22 +787,36 @@ footer{
     .stroj{
         display:flex;
         flex-direction: column;
-        
+        width:100%;
     }
     .voda{
         display:flex;
         flex-direction: column;
-        
+        width:100%;
     }
     .revize{
         display:flex;
         flex-direction: column;
-        
+        width:100%;
     }
     .detekce{
         display:flex;
         flex-direction: column;
+        width:100%;
+    }
+    .s{
+        width:100%;
         
+    }
+    .v{
+        width:100%;
+        
+    }
+    .r{
+        width:100%;  
+    }
+    .d{
+        width:100%;
     }
     .konec{
         width: 100%;
