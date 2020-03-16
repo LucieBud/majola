@@ -1,13 +1,11 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
-
 /*font-family: 'Lato', sans-serif;
 font-family: 'Amatic SC', cursive;
 font-family: 'Girassol', cursive;
 rgba(255, 106, 7, 0.945);
 rgba(87, 243, 56, 0.945)
 */
-
 body{
     font-family: 'Lato', sans-serif;
     background-color: white;
@@ -18,10 +16,10 @@ body{
     max-width:80rem;
 }
 
-
-
 header{
     background-color: white;
+    background-image: url(images/water1.jpg);
+    background-repeat: no-repeat; 
     background-image: url(images/voda.jpg);
     background-repeat: no-repeat;
     background-size:  600px 250px;
@@ -44,7 +42,7 @@ header{
     margin-top:1rem;
     position: relative;
     top:2rem;
-    left:2rem;
+    left:3.7rem;
 }
 h1{
     font-family:'Girassol', cursive;
@@ -60,7 +58,6 @@ h1{
     flex-direction: column;
     align-items: center;
     align-self:flex-end;
-
 }
 .contact{
     list-style:none;
@@ -70,11 +67,13 @@ h1{
     line-height: 2.5rem;
 }
 .social{
+    
     align-items: center;
     display:flex;
     flex-direction:row;
     align-self: flex-end;
     margin-top:1rem;
+    display:none;
 }
 .twitter{
     width:55px;
@@ -126,9 +125,42 @@ h1{
 .czech:hover{
     transform: translateY(-5px);
 }
-
-
 .menu{
+    list-style:none;
+    display:none;
+    padding:0;
+    margin:0;
+    height: 50px;
+    width:100%;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  rgb(52, 121, 248);
+    box-shadow: 5px 5px 2px rgba(62, 81, 247, 0.2);
+    border-radius: 8px;
+}
+
+.menuu{
+    display:none;
+    /*position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    padding-top:2rem;
+    padding-bottom:0;
+    background-color: white;*/
+    
+}
+.menul{
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    padding-top:2rem;
+    padding-bottom:0;
+    background-color: white;
+    
+}
+.menularge{
     list-style:none;
     
     padding:0;
@@ -139,25 +171,11 @@ h1{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-}
-.menuu{
-    position:-webkit-sticky;
-    position:sticky;
-    top:0;
-    padding-top:2rem;
-    padding-bottom:0;
-    background-color: white;
-    
-}
-.menu{
     background-color:  rgb(52, 121, 248);
     box-shadow: 5px 5px 2px rgba(62, 81, 247, 0.2);
     border-radius: 8px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
-.menu a{
+.menularge a{
     text-decoration: none;
     color: white;
     font-size: 1.9rem;
@@ -167,26 +185,24 @@ h1{
     transition-property: transform;
     transition-duration: 0.5s;
 }
-.menu a:hover{
+.menularge a:hover{
     transform: translateY(-5px);
 }
 .menubutton{
     display:none;
 }
-
-
-
-
 .linka{
     display:flex;
     flex-direction: row;
     font-size: 110%;
-    
+    background-color:white;
     align-items: center;
     color: rgb(22, 20, 19);
     
     font-weight: 700;
-    
+    position:-webkit-sticky;
+    position:sticky;
+    top:80px;
     
 }
 .nonstop{
@@ -272,7 +288,7 @@ h2{
     border-bottom: 1px solid rgb(52, 121, 248);
 }
 .work{
-    height: 150px;
+    height: 100px;
 }
 .spolehlivost{
     padding:2rem;
@@ -318,10 +334,6 @@ h2{
 h4{
     font-size:1.5rem;
 }
-
-
-
-
 .service{
     display:flex;
     flex-direction: column;
@@ -377,7 +389,6 @@ h4{
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
-
 }
 .d{
     width:50%;
@@ -427,6 +438,30 @@ h4{
     flex-direction: column;
     text-align:center;
 }
+.comments{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border: 1px solid rgb(190, 191, 192);
+    margin:3rem;
+    padding:0.5rem;
+    box-shadow: 3px 5px rgb(216, 213, 213);
+    border-radius: 8px;
+}
+
+/*.com{
+    height:70% ;
+    width:70%;
+    margin-top:3rem;
+    margin-bottom:2rem;
+}*/
+
+.hodnoceni{
+    color:black;
+}
+.hodnoceni:hover{
+    text-decoration: none;
+}
 .why{
     font-family:'Girassol', cursive;
     font-size:30px;
@@ -441,7 +476,6 @@ h4{
 .because li{
     text-align:left;
 }
-
 .sentence{
     margin-top:3rem;
     line-height: 2rem;
@@ -451,10 +485,6 @@ h4{
     font-family: 'Girassol', cursive;
     padding-bottom:1rem;
 }
-
-
-
-
 footer{
     display: flex;
     flex-direction: column;
@@ -467,7 +497,6 @@ footer{
     background-color:rgb(52, 121, 248);
     color:white;
 }
-
 .kontakty{
     padding-top:1rem;
     
@@ -480,7 +509,6 @@ footer{
 .adress{
     padding-bottom:1rem;
 }
-
 .foot{
     
     align-self:center;
@@ -508,7 +536,6 @@ footer{
     padding:0;
     margin:0;
     line-height: 0;
-
 }
 .tel li{
     padding:0;
@@ -524,6 +551,7 @@ footer{
     transition-duration: 0.5s;
     transition-timing-function: ease;
 }
+
 
 @media (min-width:870px) and (max-width:1200px){
     header{
@@ -560,8 +588,9 @@ footer{
         padding-top:7rem;
     }
     .service{
+        padding:2rem;
         padding-top:7rem;
-
+        margin:0;
     }
     .fer{
         padding-top:7rem;
@@ -643,6 +672,7 @@ footer{
     .linka{
         display:flex;
         flex-direction: column;
+        position:static;
     }
     .nonstop{
         align-items:center;
@@ -652,6 +682,9 @@ footer{
     .number{
         align-items:center;
         margin:1rem;
+    }
+    .menul{
+        display:none;
     }
     .menuu{
         display:none;
@@ -668,6 +701,7 @@ footer{
         height: 300px;
         width:60%;
         z-index:20;
+       
         
         text-decoration:none;
         margin:0;
@@ -676,6 +710,7 @@ footer{
     }
     .menu a{
         display:block;
+        color:white;
         font-size:120%;
         text-decoration: none;
         padding:1.5rem 1rem 1.5rem 1rem;        
@@ -764,7 +799,23 @@ footer{
     .sl{
         text-align:center;
     }
-   
+    .s{
+        width:100%;
+
+    }
+    .v{
+        width:100%;
+
+    }
+    .r{
+        width:100%;
+
+    }
+    .d{
+        width:100%;
+
+    }
+
     .detektor{
         width:30%;
         height:50%;
@@ -787,16 +838,19 @@ footer{
     .stroj{
         display:flex;
         flex-direction: column;
+
         width:100%;
     }
     .voda{
         display:flex;
         flex-direction: column;
+
         width:100%;
     }
     .revize{
         display:flex;
         flex-direction: column;
+
         width:100%;
     }
     .detekce{
@@ -806,11 +860,11 @@ footer{
     }
     .s{
         width:100%;
-        
+
     }
     .v{
         width:100%;
-        
+
     }
     .r{
         width:100%;  
@@ -865,10 +919,8 @@ footer{
         width:20%;
         height:15%;
         top:2rem;
-
     }
 }
-
 @media (max-width:445px){
     .mapa{
         width:150px;
