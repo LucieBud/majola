@@ -438,24 +438,16 @@ h4{
     flex-direction: column;
     text-align:center;
 }
-.comments{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    border: 1px solid rgb(190, 191, 192);
-    margin:3rem;
-    padding:0.5rem;
-    box-shadow: 3px 5px rgb(216, 213, 213);
-    border-radius: 8px;
-}
 
-/*.com{
+.com{
     height:70% ;
     width:70%;
     margin-top:3rem;
     margin-bottom:2rem;
-}*/
-
+}
+.com1{
+    display:none;
+}
 .hodnoceni{
     color:black;
 }
@@ -655,7 +647,7 @@ footer{
         display:flex;
         flex-direction: column;  
         margin-right:2rem;  
-        
+        display:none;
     }
     .twitter:hover{
         transform: translateX(-5px);
@@ -770,7 +762,7 @@ footer{
     }
     .nadpishl{
         font-size:2.5rem;
-        margin-top:0;
+        margin-top:8rem;
         align-self:center;
         padding-left:0;
     }
@@ -980,6 +972,11 @@ footer{
         margin-right:0.5rem;
     }
 }
+@media (min-width:443px) and (max-width:474px){
+    .brand{
+        margin-top:0rem;
+    }
+}
 @media (max-width:500px){
     .menubutton{
         margin-right:2rem;
@@ -991,6 +988,18 @@ footer{
     }
     .number{
         font-size:80%;
+    }
+}
+@media (max-width:800px){
+    .com{
+        display:none;
+    }
+    .com1{
+        display:block;
+        margin-top:3rem;
+        margin-bottom:2rem;
+        margin-left:1rem;
+        width:120%;
     }
 }
 .show{
