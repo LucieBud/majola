@@ -580,8 +580,8 @@ footer{
 }
 @media (max-width:1140px){
     .mapa{
-        height:300px;
-        width:140%;
+        height:250px;
+        width:120%;
         
     }
 }
@@ -939,16 +939,18 @@ footer{
         top:2rem;
     }
 }
+
+}
 @media (max-width:445px){
     .mapa{
         width:250px;
         height:140px;
-        margin-left:-2rem;
+        margin-left:-1rem;
     }
     .map{
         padding:0;
-        margin:1rem;
-        margin-left:2rem;
+       
+       
     }
     .tel{
         flex-direction:column;
