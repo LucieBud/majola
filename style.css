@@ -17,12 +17,7 @@ body{
 }
 
 header{
-    background-color: white;
-    background-image: url(images/water1.jpg);
-    background-repeat: no-repeat; 
-    background-image: url(images/voda.jpg);
-    background-repeat: no-repeat;
-    background-size:  600px 250px;
+    
     display:flex;
     flex-direction: column;
 }
@@ -36,19 +31,18 @@ header{
     flex-wrap: nowrap; 
 }
 .brand{
-    width:15%;
-    height:20%;
+    
     margin-right: auto;
-    margin-top:2rem;
+    
     position: relative;
-    top:2rem;
+    top:3rem;
     left:3.7rem;
 }
 h1{
     font-family:'Girassol', cursive;
     font-size: 250%;
     line-height: 3.5rem;
-    margin-top:2rem;
+    margin-top:-2.05rem;
     margin-bottom:2rem;
     padding-left:2rem;
     text-align: center;
@@ -544,9 +538,10 @@ footer{
     align-self: flex-start;
 }
 .mapa{
-    height:350px;
+    width: 100%;
+    height:auto;
     margin-bottom:2rem;
-    width: 170%;
+    
     margin-right:-5rem;
     
 }
@@ -558,7 +553,7 @@ footer{
 }
 
 
-@media (min-width:870px) and (max-width:1200px){
+/*@media (min-width:870px) and (max-width:1200px){
     header{
         background-color: white;
         background-image: url(images/voda.jpg);
@@ -581,13 +576,13 @@ footer{
         background-repeat: no-repeat;
         background-size:  300px 120px;
     }
-}
+}*/
 @media (max-width:1140px){
-    .mapa{
+   /* .mapa{
         height:250px;
         width:120%;
         
-    }
+    }*/
 }
 @media (min-width:1141px) and(max-width:1200px){
     
@@ -598,10 +593,10 @@ footer{
         
         
     }
-    .mapa{
+    /*.mapa{
         
         margin-right:5rem;
-    }
+    }*/
 }
 
 @media (max-width:991px){
@@ -792,7 +787,7 @@ footer{
     }
     .nadpishl{
         font-size:2.5rem;
-        margin-top:6rem;
+        margin-top:2rem;
         align-self:center;
         padding-left:0;
     }
@@ -917,44 +912,38 @@ footer{
 }
 @media (max-width:639px){
     .brand{
-        width:80px;
-        height:40px;
-    
+        width:150px;
+        height:auto;
     }
-    .mapa{
+    /*.mapa{
         width:210px;
         height:120px;
-    }
+    }*/
 }
 @media (min-width:640px) and (max-width:809px){
     h1{
         margin-left:0;
         margin-right:0;
     }
-    .mapa{
+    /*.mapa{
         width:300px;
         height:180px;
-    }
-}
-@media (min-width:640px) and (max-width:991){
-    /*h1{
-        margin-left:15rem;
-        margin-right:15rem;
     }*/
+}
+@media (min-width:640px) and (max-width:991px){
     .brand{
-        width:20%;
-        height:15%;
-        top:2rem;
+        width:250px;
+        height:auto;
     }
 }
 
 }
 @media (max-width:540px){
-    .mapa{
+    /*.mapa{
         width:10px;
         height:50px;
         margin-left:-1rem;
-    }
+    }*/
     .map{
         padding:0;
        
@@ -1001,19 +990,19 @@ footer{
     }
     .nadpishl{
         font-size: 2rem;
-        margin-top:2rem;
+        margin-top:1rem;
     }
     .brand{
-        margin-top:-0.5rem;
+        margin-top:2rem;
     }
     .menubutton{
         margin-right:0.5rem;
     }
 }
 @media (min-width:443px) and (max-width:474px){
-    .brand{
+    /*.brand{
         margin-top:0rem;
-    }
+    }*/
 }
 @media (max-width:500px){
     .menubutton{
